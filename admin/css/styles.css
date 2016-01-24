@@ -18,3 +18,23 @@ html, body {
 #form-container form input[type=button] {
     margin-bottom: 0px;
 }
+#admin-container {
+    display: none;
+}
+.header-btn {
+    margin-top: 1.5rem;
+    float: right;
+}
+#edit-posts-btn {
+    display: none;
+}
+#header-container {
+    padding-top: 1rem;
+    border-bottom: 1px solid #ddd;
+}
+#new-post-container {
+    display: none;
+}
+#new-post-container form{
+    margin-top: 2rem;
+}
