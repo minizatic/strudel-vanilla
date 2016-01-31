@@ -40,8 +40,11 @@
                             <input class="u-full-width" type="text" id="post-title">
                             <label for="post-body">Body</label>
                             <textarea class="u-full-width" id="post-body" rows="12"></textarea>
-                            <label for="post-tags">Tags</label>
-                            <input class="u-full-width" type="text" id="post-tags">
+                            <label id="tags-label" for="post-tag-1">Tags</label>
+                            <div id="tags-container">
+                            </div>
+                            <input id="add-tag-btn" value="Add Tag" type="button">
+                            <br />
                             <input class="button-primary" id="publish-btn" value="Publish" type="button">
                         </form>
                     </div>
@@ -50,6 +53,12 @@
         </div>
         <script id="post-template" type="x-tmpl-mustache">
             
+        </script>
+        <script id="tag-input-template" type="x-tmpl-mustache">
+            <div data-tag="{{x}}">
+                <input type="text" id="post-tag-{{x}}">
+                <input value="x" type="button" class="remove-tag-btn">
+            </div>
         </script>
     </body>
 </html>
